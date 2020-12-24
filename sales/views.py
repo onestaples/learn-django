@@ -34,6 +34,7 @@ th, td {
     </body>
 </html>
 '''
+
 def listorder(request):
     return HttpResponse('hallo word')
 
@@ -50,7 +51,7 @@ def listcustoms(request):
 
     # 生成html模板中要插入的html片段内容
     tableContent = ''
-    for customer in  qs:
+    for customer in qs:
         tableContent += '<tr>'
 
         for name,value in customer.items():
